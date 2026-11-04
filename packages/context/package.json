@@ -1,0 +1,9 @@
+{
+  "name": "@repo/context",
+  "private": true,
+  "version": "0.0.0",
+  "description": "Contexto do projeto: arquitetura, convenções e guias (fonte única para pessoas e agentes).",
+  "files": [
+    "*.md"
+  ]
+}
