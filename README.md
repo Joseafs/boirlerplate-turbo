@@ -27,6 +27,4 @@ pnpm format:check
 
 Apps são independentes. Uma aplicação Next.js pode ser adicionada em `apps/site` sem converter o painel Vite.
 
-Leia [arquitetura](docs/architecture.md), [convenções](docs/conventions.md) e [guia](docs/getting-started.md).
-
-> O lockfile será gerado ao executar `pnpm install`. Comite-o após instalar e validar as dependências.
+Leia [contexto](packages/context/context.md), [arquitetura](packages/context/docs/architecture/arch-001-monorepo-boundaries.md), [convenções](packages/context/docs/engineering/eng-001-code-conventions.md) e [guia](packages/context/docs/engineering/eng-003-getting-started.md).

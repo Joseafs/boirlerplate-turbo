@@ -1,7 +1,3 @@
-import globals from 'globals';
-import { base } from '@repo/eslint-config/base';
+import { node } from "@repo/eslint-config/node";
 
-export default [
-  ...base,
-  { files: ['**/*.{ts,tsx}'], languageOptions: { globals: globals.node } },
-];
+export default node;

@@ -1,10 +1,10 @@
-import Fastify from 'fastify';
-import { healthSchema } from '@repo/contracts/health';
+import { healthSchema } from "@repo/contracts/health";
+import Fastify from "fastify";
 
 export function createApp() {
   const app = Fastify();
 
-  app.get('/health', async () => healthSchema.parse({ status: 'ok' }));
+  app.get("/health", () => healthSchema.parse({ status: "ok" }));
 
   return app;
 }

@@ -3,19 +3,31 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "exports": { "./button": "./src/Button/index.tsx" },
+  "exports": {
+    "./atoms/*": "./src/atoms/*/index.tsx",
+    "./molecules/*": "./src/molecules/*/index.tsx",
+    "./organisms/*": "./src/organisms/*/index.tsx"
+  },
   "scripts": {
-    "lint": "eslint .",
+    "lint": "eslint . --max-warnings 0",
     "typecheck": "tsc --noEmit",
     "test": "vitest run --passWithNoTests"
   },
-  "peerDependencies": { "react": "^19.0.0" },
+  "peerDependencies": {
+    "react": "^19.0.0"
+  },
   "devDependencies": {
     "@repo/eslint-config": "workspace:*",
     "@repo/typescript-config": "workspace:*",
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^16.3.0",
+    "@testing-library/user-event": "^14.6.1",
     "@types/react": "^19.2.2",
+    "@types/react-dom": "^19.2.2",
     "eslint": "^9.39.1",
+    "jsdom": "^27.0.1",
     "react": "^19.2.0",
+    "react-dom": "^19.2.0",
     "typescript": "^5.9.3",
     "vitest": "^3.2.4"
   }
