@@ -12,7 +12,7 @@ packages/context/
 ├─ history.md        → histórico cronológico
 └─ docs/
    ├─ architecture/  → ARCH-* e decisions/ (ADR-*)
-   ├─ engineering/   → ENG-* (convenções, fluxo de agentes, setup)
+   ├─ engineering/   → ENG-* (convenções, fluxo de agentes, setup, services)
    └─ ui/            → UI-* (componentes atômicos)
 ```
 

@@ -2,6 +2,10 @@
 
 Mais recente primeiro.
 
+## 2026-11-05
+
+- Template de services (axios + `config` + `methods/apiGet|apiPost|apiPut|apiPatch|apiDelete`, `handleError`) inserido em `apps/web/src/services` com testes (ENG-004).
+
 ## 2026-11-04
 
 - Confirmados pelo dono: `no-explicit-any` como erro, prefixo `should` nos testes e `noUncheckedIndexedAccess` mantido (ADR-002, ADR-004).
