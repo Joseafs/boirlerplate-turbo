@@ -5,7 +5,7 @@
 
 ## Decisão
 
-Vitest + Testing Library em `jsdom`, sem globals. Componentes: `tests.tsx` na pasta (como no painel). Outros módulos: `nome.test.ts`. Estrutura `describe("Nome")` + `it("should ...")`.
+Vitest + Testing Library em `jsdom`, sem globals. Componentes: `tests.tsx` na pasta (como no painel). Hooks, serviços e utils: `tests.ts` na própria pasta. Estrutura `describe("Nome")` + `it("should ...")`.
 
 ## Nota (confirmada pelo dono em 2026-11-04)
 

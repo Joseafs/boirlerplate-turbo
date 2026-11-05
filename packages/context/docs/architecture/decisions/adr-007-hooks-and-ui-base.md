@@ -5,7 +5,7 @@
 
 ## Decisão
 
-- `packages/hooks` (`@repo/hooks`): hooks reutilizáveis, uma pasta por hook em `src/useNome/` com `index.ts` e `useNome.test.ts`. Consumo por subpath: `@repo/hooks/useDebounce`. Hooks específicos de um app ficam no app.
+- `packages/hooks` (`@repo/hooks`): hooks reutilizáveis, uma pasta por hook em `src/useNome/` com `index.ts` e `tests.ts`. Consumo por subpath: `@repo/hooks/useDebounce`. Hooks específicos de um app ficam no app.
 - `packages/ui-base` (`@repo/ui-base`): primitivos do **shadcn/ui** (estilo new-york, Tailwind v4, Radix) para componentes rápidos e simples. Consumo por subpath: `@repo/ui-base/components/button`; tema em `@repo/ui-base/globals.css`.
 - `packages/ui` continua sendo a camada atômica própria (atoms/molecules/organisms) e pode compor os primitivos do `ui-base`.
 

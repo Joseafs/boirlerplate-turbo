@@ -8,13 +8,13 @@ Hooks reutilizáveis entre apps. Hooks usados por um único app ficam no app.
 packages/hooks/src/
 ├─ useDebounce/
 │  ├─ index.ts
-│  └─ useDebounce.test.ts
+│  └─ tests.ts
 ├─ useSelect/
 │  ├─ index.ts
-│  └─ useSelect.test.ts
+│  └─ tests.ts
 └─ useToggle/
    ├─ index.ts
-   └─ useToggle.test.ts
+   └─ tests.ts
 ```
 
 ## Regras

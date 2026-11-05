@@ -11,7 +11,7 @@ export default defineConfig({
   resolve: { alias: [{ find: /^~\//, replacement: `${src}/` }] },
   test: {
     environment: "jsdom",
-    include: ["src/**/tests.{ts,tsx}", "src/**/*.test.{ts,tsx}"],
+    include: ["src/**/tests.{ts,tsx}"],
     setupFiles: ["./vitest.setup.ts"],
   },
 });

@@ -1,0 +1,5 @@
+import type { ComponentProps } from "react";
+
+import type { Label as LabelPrimitive } from "radix-ui";
+
+export type LabelProps = ComponentProps<typeof LabelPrimitive.Root>;

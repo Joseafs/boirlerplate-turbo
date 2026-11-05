@@ -5,8 +5,8 @@
   "type": "module",
   "exports": {
     "./globals.css": "./src/styles/globals.css",
-    "./lib/*": "./src/lib/*.ts",
-    "./components/*": "./src/components/*.tsx"
+    "./lib/*": "./src/lib/*/index.ts",
+    "./components/*": "./src/components/*/index.tsx"
   },
   "scripts": {
     "lint": "eslint . --max-warnings 0",

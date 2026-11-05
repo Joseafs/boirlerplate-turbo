@@ -2,9 +2,9 @@ import { render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import { describe, expect, it, vi } from "vitest";
 
-import { Button } from "./button";
+import { Button } from "./index";
 
-describe("Button (shadcn)", () => {
+describe("Button", () => {
   it("should render its children as the accessible name", () => {
     render(<Button>Salvar</Button>);
 

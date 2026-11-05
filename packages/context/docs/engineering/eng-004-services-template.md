@@ -44,7 +44,7 @@ export const apiGet = async <Response>(url: string) => {
 - Quem chama trata na ponta: `catch (e) { setError((e as Error).message) }`.
 - Tipos da resposta vêm do genérico (`apiGet<User[]>("/users")`); dados externos relevantes são validados com Zod (`@repo/contracts`).
 - Base URL via `VITE_API_URL` (padrão `http://localhost:3001`).
-- Método novo ganha teste `nome.test.ts` na própria pasta, mockando `~/services/config`.
+- Método novo ganha `tests.ts` na própria pasta, mockando `~/services/config`.
 
 ## Versão com `fetch` (se não houver axios)
 

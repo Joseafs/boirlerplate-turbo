@@ -1,18 +1,9 @@
 import { createContext, useContext, useEffect, useState } from "react";
-import type { FC, ReactNode } from "react";
+import type { FC } from "react";
 
-export type Theme = "dark" | "light" | "system";
+import type { Theme, ThemeContextValue, ThemeProviderProps } from "./types";
 
-interface ThemeContextValue {
-  setTheme: (theme: Theme) => void;
-  theme: Theme;
-}
-
-interface ThemeProviderProps {
-  children: ReactNode;
-  defaultTheme?: Theme;
-  storageKey?: string;
-}
+export type { Theme } from "./types";
 
 const THEMES: readonly Theme[] = ["dark", "light", "system"];
 const DARK_QUERY = "(prefers-color-scheme: dark)";

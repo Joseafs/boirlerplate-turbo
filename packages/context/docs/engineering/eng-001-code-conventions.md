@@ -31,7 +31,7 @@ Aspas duplas, `;`, largura 80, 2 espaços, `arrowParens: "avoid"`, LF.
 
 ## Testes
 
-- Componente: `tests.tsx` dentro da pasta. Outros módulos: `nome.test.ts` ao lado.
+- Tudo numa pasta própria, com `tests.tsx` (componente) ou `tests.ts` (hook, serviço, util). Só o `apps/api` mantém `app.test.ts` solto, por não ter pasta por módulo.
 - Estrutura: `describe("Nome")` + `it("should ...")`, com `describe/it/expect/vi` importados de `vitest` (sem globals).
 - Teste comportamento: `screen`, `getByRole`, `userEvent`; evite `getByTestId` e snapshots.
 - Ambiente `jsdom` + `@testing-library/jest-dom` via `vitest.setup.ts` (replicado em cada workspace com UI).

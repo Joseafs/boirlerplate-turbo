@@ -4,7 +4,7 @@ import { render, renderHook, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 
-import { ThemeProvider, useTheme } from "./theme-provider";
+import { ThemeProvider, useTheme } from "./index";
 
 const mockSystemDark = (matches: boolean) => {
   vi.stubGlobal(

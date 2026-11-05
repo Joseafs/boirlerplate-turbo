@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 
-import { cn } from "./utils";
+import { cn } from "./index";
 
 describe("cn", () => {
   it("should join class names and skip falsy values", () => {
