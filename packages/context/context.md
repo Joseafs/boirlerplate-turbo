@@ -24,8 +24,8 @@ Boilerplate Turborepo + pnpm + TypeScript, base para os produtos Aurum. Foco atu
 
 - Código: [ENG-001](docs/engineering/eng-001-code-conventions.md). Agentes: [ENG-002](docs/engineering/eng-002-agent-workflow.md).
 - Services HTTP: [ENG-004](docs/engineering/eng-004-services-template.md). Hooks: [ENG-005](docs/engineering/eng-005-hooks-package.md).
-- Fronteiras: [ARCH-001](docs/architecture/arch-001-monorepo-boundaries.md). UI atômica: [UI-001](docs/ui/ui-001-atomic-components.md). shadcn: [UI-002](docs/ui/ui-002-ui-base-shadcn.md).
-- Decisões: `docs/architecture/decisions/` (ADR-001 a 007).
+- Fronteiras: [ARCH-001](docs/architecture/arch-001-monorepo-boundaries.md). UI atômica: [UI-001](docs/ui/ui-001-atomic-components.md). shadcn e tema: [UI-002](docs/ui/ui-002-ui-base-shadcn.md).
+- Decisões: `docs/architecture/decisions/` (ADR-001 a 008).
 
 ## Dependências
 

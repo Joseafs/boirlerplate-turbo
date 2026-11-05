@@ -31,3 +31,9 @@ Depois, **sempre**:
 - Não edite componentes vendorizados para regra de produto: componha em `@repo/ui` (molecules/organisms) ou no app.
 - Arquivos do shadcn usam kebab-case (`button.tsx`); é a exceção à regra de pastas PascalCase de [UI-001](ui-001-atomic-components.md).
 - Tema (cores, raio) muda em `src/styles/globals.css`, via variáveis CSS.
+
+## Tema claro/escuro
+
+Tokens em `src/styles/theme.css`; `globals.css` os importa. O app envolve tudo em `ThemeProvider` e usa `useTheme()` para ler/alterar (`light`, `dark`, `system`). Detalhes em [ADR-008](../architecture/decisions/adr-008-theme.md). Exemplo de uso: `apps/web/src/ThemeToggle`.
+
+Em testes que renderizam componentes com `useTheme`, envolva em `<ThemeProvider defaultTheme="light">`. O jsdom não tem `matchMedia`, e o `localStorage` é um Storage em memória criado no `vitest.setup.ts` (Node 25+ o deixa indefinido).

@@ -4,6 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Boilerplate Turbo</title>
+    <script>
+      // Aplica o tema antes da primeira pintura para evitar flash. Mantenha em sincronia com o ThemeProvider.
+      (function () {
+        var stored = localStorage.getItem("theme");
+        var dark =
+          stored === "dark" ||
+          ((stored === null || stored === "system") &&
+            window.matchMedia("(prefers-color-scheme: dark)").matches);
+        document.documentElement.classList.add(dark ? "dark" : "light");
+      })();
+    </script>
   </head>
   <body>
     <div id="root"></div>

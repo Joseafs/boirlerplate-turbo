@@ -9,6 +9,9 @@ packages/hooks/src/
 ├─ useDebounce/
 │  ├─ index.ts
 │  └─ useDebounce.test.ts
+├─ useSelect/
+│  ├─ index.ts
+│  └─ useSelect.test.ts
 └─ useToggle/
    ├─ index.ts
    └─ useToggle.test.ts
@@ -25,4 +28,7 @@ packages/hooks/src/
 ## Hooks atuais
 
 - `useDebounce(value, delay = 300)`: valor atrasado, para busca.
-- `useToggle(initial = false)`: `[on, toggle, setOn]`.
+- `useToggle(initial = false)`: `[on, toggle, setOn]`; o modelo mais simples de estado para um `onClick`.
+- `useSelect(initial = null)`: seleção única, retorna `{ clear, isSelected, select, selected }`; compara por igualdade estrita (`===`), então para objetos use o mesmo referencial ou um id.
+
+Use-os como modelo para novos hooks: tipos explícitos, retorno simples e teste com `renderHook`.
