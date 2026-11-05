@@ -17,7 +17,7 @@ Este projeto é context-first. Este arquivo é só o ponto de entrada; a fonte d
 - Sem imports com `../`: use `~/` (apps) ou o subpath público do pacote.
 - Chamadas HTTP no front só via `~/services/methods` (axios + `handleError`), nunca `axios` direto em componente (ENG-004).
 - Só exports nomeados.
-- Sem nova dependência, camada ou abstração sem justificativa (registre um ADR).
+- Sem nova dependência, camada ou abstração sem justificativa (registre um ADR). Dependências sempre com versão exata (sem `^`/`~`); não atualize versões existentes sem confirmação (ADR-006).
 - Não invente regra de negócio; sem fonte, marque `TODO` em `tasks.md`.
 - Faça só o que foi pedido; sugestões extras vão no relato final.
 - Escolhas de gosto do dono (nomes, estilo, bibliotecas): pergunte.

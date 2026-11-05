@@ -16,7 +16,7 @@ Crie `apps/nome` com `package.json`, scripts e TS/ESLint estendidos dos packages
 
 ## Novo package
 
-Crie `packages/nome`, defina `exports` explícitos e adicione como `workspace:*` nos consumidores. Evite ciclos. Registre um ADR se a decisão não for óbvia.
+Crie `packages/nome`, defina `exports` explícitos, dependências com versão exata (`pnpm add` já grava assim) e adicione como `workspace:*` nos consumidores. Evite ciclos. Registre um ADR se a decisão não for óbvia.
 
 ## Novo componente
 

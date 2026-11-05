@@ -4,6 +4,8 @@ Mais recente primeiro.
 
 ## 2026-11-05
 
+- Criados `@repo/hooks` (`useDebounce`, `useToggle`) e `@repo/ui-base` (shadcn: button, card, input, label; Tailwind v4 no `web`), ADR-007, ENG-005 e UI-002.
+- Todas as dependências travadas em versão exata, `save-exact` no `.npmrc` (ADR-006); peers mantidos como range.
 - Template de services (axios + `config` + `methods/apiGet|apiPost|apiPut|apiPatch|apiDelete`, `handleError`) inserido em `apps/web/src/services` com testes (ENG-004).
 
 ## 2026-11-04

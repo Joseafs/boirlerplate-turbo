@@ -55,6 +55,8 @@ Commit, push, mudança de CI, alteração de versão de dependência existente, 
 | Schema/tipo compartilhado     | `packages/contracts/src`                                          |
 | Regra de lint / tsconfig      | `packages/eslint-config`, `packages/typescript-config`            |
 | Tela, rota, lógica de produto | `apps/web/src`                                                    |
+| Hook reutilizável             | `packages/hooks/src` ([ENG-005](eng-005-hooks-package.md))        |
+| Componente shadcn rápido      | `packages/ui-base` ([UI-002](../ui/ui-002-ui-base-shadcn.md))     |
 | Chamada HTTP no front         | `apps/web/src/services` ([ENG-004](eng-004-services-template.md)) |
 | Endpoint, lógica de servidor  | `apps/api/src`                                                    |
 | Documentação / decisões       | `packages/context`                                                |

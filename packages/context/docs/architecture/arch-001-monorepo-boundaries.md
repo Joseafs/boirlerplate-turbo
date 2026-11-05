@@ -5,7 +5,9 @@
 - `apps/*` consome `packages/*`; packages nunca importam apps.
 - Apps não importam código um do outro; compartilhamento só por `packages/*`.
 - `packages/context` não é runtime: nunca importar em código de aplicação.
-- `ui`: componentes React independentes de Vite/Next, sem regra de produto.
+- `ui`: componentes React atômicos independentes de Vite/Next, sem regra de produto.
+- `ui-base`: primitivos shadcn/ui vendorizados (Tailwind v4); sem regra de produto.
+- `hooks`: hooks React reutilizáveis, sem dependência de app.
 - `contracts`: Zod e tipos inferidos, sem dependência de UI ou API.
 - `eslint-config` e `typescript-config`: configuração compartilhada, sem código de produto.
 - Código específico de feature fica próximo da feature no app; promova para package só com reuso real.

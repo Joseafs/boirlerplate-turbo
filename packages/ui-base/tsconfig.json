@@ -1,0 +1,7 @@
+{
+  "extends": "@repo/typescript-config/react.json",
+  "compilerOptions": {
+    "paths": { "@repo/ui-base/*": ["./src/*"] }
+  },
+  "include": ["src", "vitest.config.ts", "vitest.setup.ts"]
+}

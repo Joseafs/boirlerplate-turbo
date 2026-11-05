@@ -6,7 +6,7 @@ Roadmap operacional. Concluídas vão para `history.md`.
 
 - [ ] **API em produção:** definir como rodar `apps/api` sem `.ts` de pacotes internos (bundler ou build do `contracts`) e criar script `start` (ADR-005).
 - [ ] Primeira `molecule` e primeiro `organism` reais em `@repo/ui`, validando a regra de dependência e a self-reference.
-- [ ] Decidir estratégia de estilos para `@repo/ui` (CSS Modules, Tailwind, styled…); hoje `Button` não tem estilo.
+- [ ] Decidir o botão oficial: `@repo/ui/atoms/Button` (sem estilo) ou `@repo/ui-base/components/button` (shadcn); hoje há sobreposição (ADR-007). Tailwind v4 já está no `web`.
 - [ ] Avaliar `jsx-a11y`, `commitlint` e Storybook (fora do escopo inicial).
 - [ ] Revisar se `eslint-typegen` vale o custo.
 - [ ] `apps/site` (Next.js) quando houver produto que precise.
