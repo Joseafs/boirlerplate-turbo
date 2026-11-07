@@ -4,6 +4,8 @@ Mais recente primeiro.
 
 ## 2026-11-05
 
+- Padrões do `aurum-challenge` trazidos para o `apps/web`: rotas em objeto (`router`), `TemplateSystem` como layout/providers (agora com o `ThemeProvider`), `Home` em `pages/`, `ThemeToggle` em `components/`, toast para erros, `.env.dev` com `vite --mode dev` e `VITE_API_URL` tipada; `useDidMount` em `@repo/hooks` (ADR-009, ENG-006).
+
 - `@repo/ui-base` reorganizado no padrão de uma pasta por componente (`index.tsx`, `types.ts`, `variants.ts`, `tests.tsx`), inclusive `theme-provider` e `lib/utils`; `exports` apontam para as pastas.
 - Tema claro/escuro funcional (`ThemeProvider`, `useTheme`, `ThemeToggle`, script anti-flash, tokens em `theme.css`) verificado no navegador (ADR-008). Novo hook `useSelect`.
 - Criados `@repo/hooks` (`useDebounce`, `useToggle`) e `@repo/ui-base` (shadcn: button, card, input, label; Tailwind v4 no `web`), ADR-007, ENG-005 e UI-002.

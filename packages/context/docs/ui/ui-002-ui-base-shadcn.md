@@ -36,6 +36,6 @@ O CLI gera um arquivo solto em `src/components/dialog.tsx`. Depois, **sempre**:
 
 ## Tema claro/escuro
 
-Tokens em `src/styles/theme.css`; `globals.css` os importa. O app envolve tudo em `ThemeProvider` e usa `useTheme()` para ler/alterar (`light`, `dark`, `system`). Detalhes em [ADR-008](../architecture/decisions/adr-008-theme.md). Exemplo de uso: `apps/web/src/ThemeToggle`.
+Tokens em `src/styles/theme.css`; `globals.css` os importa. O app envolve tudo em `ThemeProvider` (no `TemplateSystem`) e usa `useTheme()` para ler/alterar (`light`, `dark`, `system`). Detalhes em [ADR-008](../architecture/decisions/adr-008-theme.md). Exemplo de uso: `apps/web/src/components/ThemeToggle`.
 
 Em testes que renderizam componentes com `useTheme`, envolva em `<ThemeProvider defaultTheme="light">`. O jsdom não tem `matchMedia`, e o `localStorage` é um Storage em memória criado no `vitest.setup.ts` (Node 25+ o deixa indefinido).

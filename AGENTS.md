@@ -15,8 +15,9 @@ Este projeto é context-first. Este arquivo é só o ponto de entrada; a fonte d
 - Direção de dependência: apps -> packages; apps não importam entre si; `packages/context` não é runtime.
 - TypeScript estrito. Sem `any`, `@ts-ignore` ou `eslint-disable` para passar verificação; warnings contam como erro.
 - Sem imports com `../`: use `~/` (apps) ou o subpath público do pacote.
-- Chamadas HTTP no front só via `~/services/methods` (axios + `handleError`), nunca `axios` direto em componente (ENG-004).
+- Chamadas HTTP no front só via `~/services/methods` (axios + `handleError`), nunca `axios` direto em componente (ENG-004); o erro vira `toast.error` na ponta.
 - Só exports nomeados.
+- Estrutura do web (ENG-006): rotas em objeto em `src/router`, providers globais só no `TemplateSystem`, contextos em `src/context/<Nome>/`, páginas em `src/pages/<Nome>/`.
 - Sem nova dependência, camada ou abstração sem justificativa (registre um ADR). Dependências sempre com versão exata (sem `^`/`~`); não atualize versões existentes sem confirmação (ADR-006).
 - Não invente regra de negócio; sem fonte, marque `TODO` em `tasks.md`.
 - Faça só o que foi pedido; sugestões extras vão no relato final.

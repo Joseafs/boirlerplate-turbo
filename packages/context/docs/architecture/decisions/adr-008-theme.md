@@ -9,7 +9,7 @@
 - Modo escuro por **classe** `.dark` no `<html>` (`@custom-variant dark`).
 - `ThemeProvider` e `useTheme` em `@repo/ui-base/components/theme-provider`: valores `light | dark | system`, padrão `system`, persistido em `localStorage` (chave `theme`) e reagindo à mudança do sistema.
 - Script inline no `index.html` aplica a classe antes da primeira pintura (sem flash). Deve ficar em sincronia com o provider.
-- O app envolve a árvore em `<ThemeProvider>` (`main.tsx`) e oferece `ThemeToggle` como exemplo de uso.
+- O app envolve a árvore em `<ThemeProvider>` dentro do `TemplateSystem` (ENG-006) e oferece `ThemeToggle` (`components/ThemeToggle`) como exemplo de uso.
 
 ## Para trocar cores ou raio
 

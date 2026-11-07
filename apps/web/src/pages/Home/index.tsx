@@ -9,9 +9,9 @@ import {
   CardTitle,
 } from "@repo/ui-base/components/card";
 
-import { ThemeToggle } from "~/ThemeToggle";
+import { ThemeToggle } from "~/components/ThemeToggle";
 
-export const App: FC = () => {
+export const Home: FC = () => {
   const [ready, setReady] = useState(false);
 
   return (
