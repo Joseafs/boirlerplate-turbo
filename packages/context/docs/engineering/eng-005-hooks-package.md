@@ -9,6 +9,9 @@ packages/hooks/src/
 ├─ useDebounce/
 │  ├─ index.ts
 │  └─ tests.ts
+├─ useDidMount/
+│  ├─ index.ts
+│  └─ tests.ts
 ├─ useSelect/
 │  ├─ index.ts
 │  └─ tests.ts
@@ -28,6 +31,7 @@ packages/hooks/src/
 ## Hooks atuais
 
 - `useDebounce(value, delay = 300)`: valor atrasado, para busca.
+- `useDidMount(callback)`: roda uma vez ao montar (aceita função de limpeza). Use no lugar de `useEffect(..., [])`; a função de carga fica fora do effect, desacoplada: `useDidMount(() => void load())`.
 - `useToggle(initial = false)`: `[on, toggle, setOn]`; o modelo mais simples de estado para um `onClick`.
 - `useSelect(initial = null)`: seleção única, retorna `{ clear, isSelected, select, selected }`; compara por igualdade estrita (`===`), então para objetos use o mesmo referencial ou um id.
 
