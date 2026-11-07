@@ -3,16 +3,16 @@ import { render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import { describe, expect, it } from "vitest";
 
-import { App } from "./index";
+import { Home } from "./index";
 
 const renderApp = () =>
   render(
     <ThemeProvider defaultTheme="light">
-      <App />
+      <Home />
     </ThemeProvider>,
   );
 
-describe("App", () => {
+describe("Home", () => {
   it("should render the page title", () => {
     renderApp();
 

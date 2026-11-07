@@ -41,9 +41,9 @@ export const apiGet = async <Response>(url: string) => {
 - Todo método: `try { api.xxx } catch (e) { throw handleError(e) }`, devolvendo só `data`.
 - `handleError` sempre devolve um `Error` com mensagem legível; o tratamento fica num lugar só.
 - Componentes e hooks **não** importam `axios`; usam `~/services/methods`.
-- Quem chama trata na ponta: `catch (e) { setError((e as Error).message) }`.
+- Quem chama trata na ponta e mostra o erro com toast: `catch (e) { toast.error((e as Error).message) }` (`react-toastify`, `ToastContainer` no `TemplateSystem`).
 - Tipos da resposta vêm do genérico (`apiGet<User[]>("/users")`); dados externos relevantes são validados com Zod (`@repo/contracts`).
-- Base URL via `VITE_API_URL` (padrão `http://localhost:3001`).
+- Base URL via `VITE_API_URL`, definida em `apps/web/.env.dev` (carregado pelo `pnpm dev`, que roda `vite --mode dev`) e tipada em `vite-env.d.ts`. Para outro ambiente, crie o `.env.<modo>` e rode `vite build --mode <modo>`.
 - Método novo ganha `tests.ts` na própria pasta, mockando `~/services/config`.
 
 ## Versão com `fetch` (se não houver axios)

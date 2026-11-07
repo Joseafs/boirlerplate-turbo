@@ -12,7 +12,7 @@ pnpm install
 pnpm dev
 ```
 
-- Web (Vite + React): http://localhost:5173
+- Web (Vite + React): http://localhost:5173 (lê `apps/web/.env.dev`, `VITE_API_URL`)
 - API (Fastify): http://localhost:3001/health
 
 ## Verificações
